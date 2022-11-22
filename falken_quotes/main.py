@@ -5,6 +5,7 @@ from flask import Flask, render_template, url_for
 from dotenv import load_dotenv, find_dotenv
 
 from .logger import Log
+from .config import get_settings
 
 # Set environment vars
 load_dotenv(find_dotenv())
@@ -17,9 +18,10 @@ app.config['TEMPLATE_AUTO_RELOAD'] = True
 @app.route("/home")
 def home():
     Log.info("Access to home page")
-    
     return render_template("index.html")
 
 
 if __name__ == "__main__":
     app.run()
+    settings = get_settings()
+    Log.info("Settings: {settings}")
