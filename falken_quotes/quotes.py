@@ -7,13 +7,14 @@ import sys
 
 from .logger import Log
 
+
 def get_api_quote(url: str) -> dict:
     """Proccess to get the quote from the API
 
     Args:
         url (str): URL for getting the quote
     """
-    Log.info(f"Proccess to getting quote from API")
+    Log.info("Proccess to getting quote from API")
     Log.debug(f"API url: {url}")
 
     try:
@@ -26,4 +27,4 @@ def get_api_quote(url: str) -> dict:
 
     except Exception as err:
         Log.error("Error getting data from API", err, sys)
-        return {}        
+        return {}

@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     api_url: str = "https://zenquotes.io/api/random"
 
     class Config:
-        # When you add the Config class with the path to your env_file to your 
+        # When you add the Config class with the path to your env_file to your
         # settings, pydantic loads your environment variables from the .env file.
         env_file = ".env"
 
