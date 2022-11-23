@@ -11,9 +11,10 @@ class Settings(BaseSettings):
     # pydantic will automatically assume those default values if it doesn’t
     # find the corresponding environment variables.
     env_name: str = "Local"
-    base_url: str = "http://localhost:8080"
-    db_url: str = "sqlite:///./shortener.db"
-    api_url: str = "https://zenquotes.io/api/today"
+    base_url: str = "http://localhost:5000"
+    # db_url: str = "sqlite:///./shortener.db"
+    # api_url: str = "https://zenquotes.io/api/today"
+    api_url: str = "https://zenquotes.io/api/random"
 
     class Config:
         # When you add the Config class with the path to your env_file to your 

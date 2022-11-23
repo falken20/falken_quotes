@@ -18,15 +18,25 @@
 }
 
 .aboutPageText {
-    text-align: left;
+    text-align: center;
     color: white;
     font-family: Monospace, Arial, Helvetica, sans-serif;
-    font-size: 110%;
+    font-size: 150%;
     padding-left: 5%;
+    padding-right: 5%;
+}
+
+.aboutPageAuthor {
+    text-align: center;
+    color: yellow;
+    font-family: Monospace, Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    padding-top: 10%;
+    padding-right: 5%;
 }
 
 .aboutPageLayer {
-    padding-top: 15%;
+    padding-top: 20%;
     align-content: center;
     background-color: black;
     height: 100%;
