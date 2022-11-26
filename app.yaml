@@ -2,8 +2,8 @@
 runtime: python38
 instance_class: F1
 
-# It is not neccesary because search for main.py in root with object app 
-# entrypoint: gunicorn -b:$PORT src.main:app 
+# entrypoint is not neccesary because search for main.py in root with object app 
+entrypoint: gunicorn -b:$PORT falken_quotes.main:app 
 # No incluyas gunicorn en requirements.txt, a menos que especifiques el entrypoint
 
 env_variables:
