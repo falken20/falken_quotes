@@ -12,10 +12,10 @@ flake8 main.py ./falken_quotes/* --count --exit-zero --max-complexity=10 --max-l
 echo "***** Unit Test *****"
 coverage run -m pytest -v -s
 echo "***** Coverage tests *****"
-coverage report --omit="*/tests/*,*/venv/*" -m ./*.py ./src/*.py
+coverage report --omit="*/tests/*,*/venv/*" -m ./falken_quotes/*.py 
 
 # Coverage report in html
 # coverage run -m pytest -v && coverage html --omit="*/test/*,*/venv/*"
 
 # With param -s for input
-# coverage run -m pytest - v -s && coverage html --omit="*/test/*,*/venv/*"
+# coverage run -m pytest -v -s && coverage html --omit="*/test/*,*/venv/*"
