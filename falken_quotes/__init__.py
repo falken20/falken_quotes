@@ -2,7 +2,7 @@
 # ./falken_quotes/__init__.py
 
 __title__ = 'Falken Quotes'
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 __author__ = 'Falken'
 __url_github__ = 'https://github.com/falken20/'
 __url_twitter__ = 'https://twitter.com/richionline'
