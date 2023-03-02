@@ -29,3 +29,5 @@ def translate(text_to_translate: str) -> str:
     )
 
     Log.debug(f"Translated text: {response.choices[0].text}")
+    return response.choices[0].text
+    
