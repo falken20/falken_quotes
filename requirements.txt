@@ -4,3 +4,4 @@ rich>=11.2.0
 requests
 pydantic # Library that uses type annotation to validate data and manage settings.
 gunicorn  # Neccesary for app.yaml
+openai # For chatGPT
