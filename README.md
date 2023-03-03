@@ -14,7 +14,8 @@
 ---
 ### falken_quotes
 It is a web where you can see every day or every moment a quote about one or several topics.
-Daily quotes. API: https://zenquotes.io/keywords.
+Daily quotes API: https://zenquotes.io/keywords.
+Translate API: https://platform.openai.com/
 
 ##### Deploy
 ```bash
@@ -60,4 +61,4 @@ LEVEL_LOG="INFO, WARNING, ERROR"
 1.0.0 Application
 
 ##### Learning tips
-- ChatGPT
+- ChatGPT (https://platform.openai.com/)

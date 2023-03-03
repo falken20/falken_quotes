@@ -18,5 +18,5 @@ handlers:
 - url: /.*
   script: auto
 
-- includes:
-  credentials.yaml
+includes:
+- credentials.yaml
