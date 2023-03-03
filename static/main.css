@@ -21,7 +21,7 @@
     text-align: center;
     color: white;
     font-family: Monospace, Arial, Helvetica, sans-serif;
-    font-size: 150%;
+    font-size: 130%;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -31,7 +31,7 @@
     color: yellow;
     font-family: Monospace, Arial, Helvetica, sans-serif;
     font-size: 100%;
-    padding-top: 10%;
+    padding-top: 100px;
     padding-right: 5%;
 }
 
@@ -191,4 +191,8 @@ a:visited {
 
  .iconData {
      width: 40%;
+ }
+
+ .quote {
+    padding-top: 100px;
  }
