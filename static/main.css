@@ -3,8 +3,8 @@ html {
 }
 
 body {
-    overflow: auto; /* Show scrollbars */
-    overflow-y: scroll;
+    overflow: auto !important; /* Show scrollbars */
+    overflow-y: scroll !important;
 }
 
 .section {
@@ -30,7 +30,7 @@ body {
     text-align: center;
     color: white;
     font-family: Monospace, Arial, Helvetica, sans-serif;
-    font-size: 130%;
+    font-size: 100%;
     padding-left: 5%;
     padding-right: 5%;
 }
