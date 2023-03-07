@@ -5,6 +5,7 @@ html {
 body {
     overflow: auto !important; /* Show scrollbars */
     overflow-y: scroll !important;
+    background-color: black !important;
 }
 
 .section {
@@ -66,7 +67,7 @@ body {
 .portfolioPage {
     text-align: center;
     font-size: 3em;
-    background-color: rgb(33, 33, 40);
+    background-color: black;
     background-image: url('/static/assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -138,7 +139,7 @@ a:visited {
 }
 
 .aboutMe {
-    color: rgb(255, 255, 255);
+    color: black;
     font-size: 80%;
     text-align: left;
 }
@@ -150,7 +151,7 @@ a:visited {
 }
 
 .contact {
-    color: white;
+    color: black;
     height: 75%;
     width: 50%;
     float: right;

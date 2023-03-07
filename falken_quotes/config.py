@@ -5,6 +5,7 @@
 from pydantic import BaseSettings
 # Library to cache the data
 from functools import lru_cache
+import os
 
 
 class Settings(BaseSettings):
