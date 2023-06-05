@@ -16,6 +16,9 @@ class Settings(BaseSettings):
     # db_url: str = "sqlite:///./shortener.db"
     # api_url: str = "https://zenquotes.io/api/today"
     api_url: str = "https://zenquotes.io/api/random"
+    ENV_PRO: str = "N"
+    LEVEL_LOG: list = []
+    OPENAI_API_KEY: str = "my-api-key"
 
     class Config:
         # When you add the Config class with the path to your env_file to your

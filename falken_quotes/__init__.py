@@ -1,6 +1,11 @@
 # by Richi Rod AKA @richionline / falken20
 # ./falken_quotes/__init__.py
 
+from flask import Flask, render_template
+
+from .config import get_settings
+from falken_quotes.logger import Log
+
 __title__ = 'Falken Quotes'
 __version__ = '1.0.1'
 __author__ = 'Falken'
@@ -24,3 +29,11 @@ SETUP_DATA = {
     'copyrigth': __copyright__,
     'features': __features__,
 }
+
+
+app = Flask(__name__, template_folder="../templates",
+            static_folder="../static")
+app.config['TEMPLATE_AUTO_RELOAD'] = True
+
+settings = get_settings()
+Log.info(f"Settings: {settings}")

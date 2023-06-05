@@ -48,9 +48,9 @@ coverage run -m pytest -v && coverage html --omit=*/venv/*,*/tests/*
 
 ##### Environment vars
 ```bash
-FALKEN_VERSION="1.0.0"
 ENV_PRO=N
-LEVEL_LOG="INFO, WARNING, ERROR"
+LEVEL_LOG=["DEBUG", "INFO", "WARNING", "ERROR"]
+OPENAI_API_KEY=
 ```
 
 ---

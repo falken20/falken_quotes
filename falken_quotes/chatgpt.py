@@ -2,8 +2,10 @@ import openai
 import os
 
 from falken_quotes.logger import Log
+from . import settings
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+# openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = settings.OPENAI_API_KEY
 model_engine = "text-davinci-003"
 
 
