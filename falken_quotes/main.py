@@ -1,11 +1,10 @@
 # by Richi Rod AKA @richionline / falken20
 # ./falken_quotes/main.py
 
-from flask import Flask, render_template
-from dotenv import load_dotenv, find_dotenv
+from flask import render_template
+# from dotenv import load_dotenv, find_dotenv
 
 from .logger import Log
-from .config import get_settings
 from .quotes import get_api_quote
 from .chatgpt import translate
 from . import app, settings

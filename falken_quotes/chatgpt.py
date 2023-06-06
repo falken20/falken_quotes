@@ -1,5 +1,4 @@
 import openai
-import os
 
 from falken_quotes.logger import Log
 from . import settings

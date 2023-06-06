@@ -1,7 +1,7 @@
 # by Richi Rod AKA @richionline / falken20
 # ./falken_quotes/__init__.py
 
-from flask import Flask, render_template
+from flask import Flask
 
 from .config import get_settings
 from falken_quotes.logger import Log
