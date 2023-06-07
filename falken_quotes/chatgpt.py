@@ -1,3 +1,8 @@
+# by Richi Rod AKA @richionline / falken20
+# ./falken_quotes/chatgpt.py
+
+##### It is neccesary to pay for license. #####
+
 import openai
 
 from falken_quotes.logger import Log

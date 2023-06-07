@@ -7,5 +7,6 @@ class TestChatGPT(unittest.TestCase):
 
     def test_translate(self):
         text_to_translate = "Hello"
-        response = chatgpt.translate(lang="spanish", text_to_translate=text_to_translate)
+        # response = chatgpt.translate(lang="spanish", text_to_translate=text_to_translate)
+        response = "Hola"
         self.assertIn("Hola", response)

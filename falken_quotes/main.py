@@ -6,7 +6,7 @@ from flask import render_template
 
 from .logger import Log
 from .quotes import get_api_quote
-from .chatgpt import translate
+from .api_translate import translate
 from . import app, settings
 
 # Set environment vars
@@ -20,7 +20,10 @@ def home():
 
     dict_quote = get_api_quote(url=settings.api_url)
     quote_translated = translate(
-        lang="spanish", text_to_translate=dict_quote[0]['q'])
+        source="en",
+        to="es", 
+        text_to_translate=dict_quote[0]['q']
+    )
 
     Log.debug(f"{dict_quote[0]['q']}")
 

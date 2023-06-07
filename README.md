@@ -4,7 +4,7 @@
 <img src="./static/assets/logo_app.png" alt="drawing" width="400"/>
 <a href="https://richionline-portfolio.nw.r.appspot.com"><img src="https://richionline-portfolio.nw.r.appspot.com/static/assets/falken_logo.ico" width=40 alt="Personal Portfolio web"></a>
 
-![Version](https://img.shields.io/badge/version-1.1.0-blue) ![GitHub language count](https://img.shields.io/github/languages/count/falken20/falken_quotes) ![GitHub Top languaje](https://img.shields.io/github/languages/top/falken20/falken_quotes) 
+![Version](https://img.shields.io/badge/version-1.2.0-blue) ![GitHub language count](https://img.shields.io/github/languages/count/falken20/falken_quotes) ![GitHub Top languaje](https://img.shields.io/github/languages/top/falken20/falken_quotes) 
 ![Test coverage](https://img.shields.io/badge/test%20coverage-100%25-green) ![GitHub License](https://img.shields.io/github/license/falken20/falken_quotes)[![Python used version](https://img.shields.io/static/v1?label=python&message=3.8&color=blue&logo=python&logoColor=white)
 
   
@@ -56,9 +56,11 @@ OPENAI_API_KEY=
 ---
 
 ##### Versions
+1.2.0 New API translation
 1.1.0 Including spanish translation
 1.0.1 Including tests
 1.0.0 Application
 
 ##### Learning tips
 - ChatGPT (https://platform.openai.com/)
+- NLP Translation (https://rapidapi.com/gofitech/api/nlp-translation/)
