@@ -1,7 +1,7 @@
 # by Richi Rod AKA @richionline / falken20
 # ./falken_quotes/api_translate.py
 
-import request
+import requests
 
 from falken_quotes.logger import Log
 from . import settings
@@ -32,13 +32,13 @@ def translate(source: str = "en", to: str = "es", text_to_translate: str = "Hell
     }
 
     headers = {
-    	"X-RapidAPI-Key": api_key,
-	    "X-RapidAPI-Host": "nlp-translation.p.rapidapi.com"    
+        "X-RapidAPI-Key": api_key,
+        "X-RapidAPI-Host": "nlp-translation.p.rapidapi.com"
     }
 
     response = requests.get(url, headers=headers, params=query)
 
     Log.debug(f"Translated text: {response.json()}")
 
-    #return response.choices[0].text.strip()
+    # return response.choices[0].text.strip()
     return response.json()

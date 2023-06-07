@@ -21,7 +21,7 @@ def home():
     dict_quote = get_api_quote(url=settings.api_url)
     quote_translated = translate(
         source="en",
-        to="es", 
+        to="es",
         text_to_translate=dict_quote[0]['q']
     )
 

@@ -18,6 +18,8 @@ class Settings(BaseSettings):
     ENV_PRO: str = "N"
     LEVEL_LOG: list = []
     OPENAI_API_KEY: str = "my-api-key"
+    API_URL="https://nlp-translation.p.rapidapi.com/v1/translate"
+    API_KEY="my-api-key"
 
     class Config:
         # When you add the Config class with the path to your env_file to your
