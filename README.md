@@ -5,7 +5,7 @@
 <a href="https://richionline-portfolio.nw.r.appspot.com"><img src="https://richionline-portfolio.nw.r.appspot.com/static/assets/falken_logo.ico" width=40 alt="Personal Portfolio web"></a>
 
 ![Version](https://img.shields.io/badge/version-1.2.0-blue) ![GitHub language count](https://img.shields.io/github/languages/count/falken20/falken_quotes) ![GitHub Top languaje](https://img.shields.io/github/languages/top/falken20/falken_quotes) 
-![Test coverage](https://img.shields.io/badge/test%20coverage-100%25-green) ![GitHub License](https://img.shields.io/github/license/falken20/falken_quotes)[![Python used version](https://img.shields.io/static/v1?label=python&message=3.8&color=blue&logo=python&logoColor=white)
+![Test coverage](https://img.shields.io/badge/test%20coverage-96%25-green) ![GitHub License](https://img.shields.io/github/license/falken20/falken_quotes)[![Python used version](https://img.shields.io/static/v1?label=python&message=3.8&color=blue&logo=python&logoColor=white)
 
   
 [![Richi web](https://img.shields.io/badge/web-richionline-blue)](https://richionline-portfolio.nw.r.appspot.com) [![Twitter](https://img.shields.io/twitter/follow/richionline?style=social)](https://twitter.com/richionline)
@@ -15,8 +15,8 @@
 ### falken_quotes
 It is a web where you can see every day or every moment a quote about one or several topics.
 Daily quotes API: https://zenquotes.io/keywords.
-Translate API: https://platform.openai.com/
-
+Translate API test: https://platform.openai.com/
+Translate API: https://nlp-translation.p.rapidapi.com/v1/translate
 ##### Deploy
 ```bash
 gcloud app deploy
@@ -51,6 +51,13 @@ coverage run -m pytest -v && coverage html --omit=*/venv/*,*/tests/*
 ENV_PRO=N
 LEVEL_LOG=["DEBUG", "INFO", "WARNING", "ERROR"]
 OPENAI_API_KEY=
+
+# NLP API
+API_URL_TRANSLATE="https://nlp-translation.p.rapidapi.com/v1/translate"
+API_KEY=
+
+# Quotes API
+API_URL_QUOTES="https://zenquotes.io/api/random"
 ```
 
 ---

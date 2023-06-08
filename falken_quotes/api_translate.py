@@ -6,7 +6,7 @@ import requests
 from falken_quotes.logger import Log
 from . import settings
 
-url = settings.API_URL
+url = settings.API_URL_TRANSLATE
 api_key = settings.API_KEY
 
 

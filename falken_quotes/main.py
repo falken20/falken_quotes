@@ -18,7 +18,7 @@ from . import app, settings
 def home():
     Log.info("Access to home page")
 
-    dict_quote = get_api_quote(url=settings.api_url)
+    dict_quote = get_api_quote(url=settings.API_URL_QUOTES)
     quote_translated = translate(
         source="en",
         to="es",

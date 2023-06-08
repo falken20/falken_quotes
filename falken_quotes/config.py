@@ -13,13 +13,12 @@ class Settings(BaseSettings):
     env_name: str = "Local"
     base_url: str = "http://localhost:5000"
     # db_url: str = "sqlite:///./shortener.db"
-    # api_url: str = "https://zenquotes.io/api/today"
-    api_url: str = "https://zenquotes.io/api/random"
     ENV_PRO: str = "N"
     LEVEL_LOG: list = []
+    API_URL_QUOTES: str = "https://zenquotes.io/api/random"
     OPENAI_API_KEY: str = "my-api-key"
-    API_URL="https://nlp-translation.p.rapidapi.com/v1/translate"
-    API_KEY="my-api-key"
+    API_URL_TRANSLATE: str = "https://nlp-translation.p.rapidapi.com/v1/translate"
+    API_KEY: str = "my-api-key"
 
     class Config:
         # When you add the Config class with the path to your env_file to your
