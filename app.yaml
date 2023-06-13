@@ -9,7 +9,9 @@ entrypoint: gunicorn -b:$PORT falken_quotes.main:app
 env_variables:
   FALKEN_VERSION: "1.0.0"
   ENV_PRO: "Y"
-  LEVEL_LOG: "INFO, WARNING, ERROR"
+  LEVEL_LOG: ["INFO", "WARNING", "ERROR"]
+  API_URL_QUOTES: "https://zenquotes.io/api/random"
+  API_URL_TRANSLATE: "https://nlp-translation.p.rapidapi.com/v1/translate"
   
 handlers:
 - url: /static
