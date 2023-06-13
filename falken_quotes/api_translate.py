@@ -38,7 +38,14 @@ def translate(source: str = "en", to: str = "es", text_to_translate: str = "Hell
 
     response = requests.get(url, headers=headers, params=query)
 
-    Log.debug(f"Translated text: {response.json()}")
+    translated_text = response.json()
+    # If there is an error in the API only return json with "message" key
+    if translated_text['message']:
+        Log.warning(f"Problems with translation: {translated_text['message']}")
+        translated_text = ""
+    else:
+        translated_text = translated_text['translated_text']
+        Log.debug(f"Translated text: {translated_text}")
 
     # return response.choices[0].text.strip()
-    return response.json()
+    return translated_text
